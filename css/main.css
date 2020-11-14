@@ -20,6 +20,66 @@
   font-weight: normal;
   font-style: normal; }
 
+.thumbnails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+
+.thumbnail{
+    padding: 20px 0;
+}
+
+.p-thumb{
+    text-decoration: none
+}
+
+.project-thumbnail{
+    width: 300px;
+    height: 240px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.thumb1{
+    background-image: url(../img/project.png);
+}
+
+.thumb2{
+    background-image: url(../img/project2.png);
+}
+
+.project-thumbnail-overlay{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.overlay1{
+    background-color: #050A26;
+}
+
+.overlay2{
+    background-color: #F06464;
+}
+
+.project-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-description{
+    text-align: center;
+    padding: 0 10px
+}
+
 #above-fold {
   line-height: 1em;
   padding: 0;
@@ -322,6 +382,7 @@ html {
   align-content: center; }
 
 footer {
+    font-family: Roboto;
   position: fixed;
   background-color: #302442;
   color: #fff;
@@ -336,7 +397,7 @@ footer {
   width: 70%; }
 
 .section {
-  width: auto;
+  width: 95%;
   margin: 25px auto; }
 
 .come-in {
@@ -370,18 +431,18 @@ footer {
   margin: 30px; }
 
 h1 {
+    font-family: Roboto;
   width: auto;
   text-align: center;
   margin: 50px auto; }
 
-h2, h3, h4 {
+h3{
+    font-family: Roboto-Regular;
   padding: 0 10px;
   margin: 50px 0; }
 
-h4 {
-  margin: 0 50px 30px 50px; }
 
-h1, h2, h3, h4, th, strong{
+strong{
     font-family: Roboto-Regular
 }
 
@@ -390,93 +451,26 @@ h1, h2, h3, h4, th, strong{
   margin: 30px 70px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
 
 .logo img {
-  width: 60%; }
+  width: 50%; }
 
 .title {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.level-2-logo-title {
-  width: 65%;
-  //margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  //align-items: center; }
-
-.linkOL-circle, .linkAL-circle, .linkCOL-circle {
-  background-color: #302442;
-  width: 25px;
-  height: 25px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
-
-.linkOL-arrow-down, .linkAL-arrow-down, .linkCOL-arrow-down {
-  display: flex;
-  align-self: center;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-  transform: translateY(-2px) rotate(45deg);
-  width: 30%;
-  height: 30%; }
-
-.linkOL-arrow-up, .linkAL-arrow-up, .linkCOL-arrow-up {
-  display: flex;
-  align-self: center;
-  border-left: 2px #fff solid;
-  border-top: 2px #fff solid;
-  transform: translateY(2px) rotate(45deg);
-  width: 30%;
-  height: 30%;
-  display: none; }
-
-a.linkAL, a.linkOL, a.linkCOL {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-#gradesAL, #gradesOL, #gradesCOL,
-.linkAL-up, .linkOL-up, .linkCOL-up {
-  display: none; }
-
-table {
-  width: auto;
-  margin: 20px 110px; }
-
-.tech-logos {
-  width: 100%;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.tech-logos div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 2%; }
-
-.tech-logos img {
-  width: 15%;
-  height: 15%; }
-
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
     align-items: center;
   margin-bottom: 5%; }
 
 .social a{
-    width: 30%;
+    width: 100px;
     display: flex;
   flex-direction: row;
   justify-content: center;
@@ -492,22 +486,6 @@ table {
   -moz-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out; }
-
-.courses {
-  margin: 20px auto;
-  table-layout: fixed; }
-
-.courses th {
-  width: 50%; }
-
-.courses th, .courses td {
-  padding: 7px 35px; }
-
-.gradesAL, .gradesOL, .gradesCOL {
-  margin: 25px auto; }
-
-th, td {
-  padding: 7px 35px; }
 
 .back-to-top-link {
   width: 100%;
@@ -592,10 +570,6 @@ a.mainlinks:visited:not(#cfa) {
 
 a.mainlinks:focus, #cfa:focus {
   border: 1px solid #5D4680; }
-
-#gradesAL, #gradesOL, #gradesCOL,
-.linkAL-up, .linkOL-up, .linkCOL-up {
-  display: none; }
 
 /* ==========================================================================
    Helper classes
@@ -729,9 +703,6 @@ a.mainlinks:focus, #cfa:focus {
     color: #000;
     border-radius: 2px; }
 
-  .sky {
-    position: fixed; }
-
   #about-me {
     padding-top: 50px; }
 
@@ -786,9 +757,6 @@ a.mainlinks:focus, #cfa:focus {
     width: 80px;
     height: 80px; }
 
-  th, td {
-    padding: 7px; }
-
   h1 {
     margin: 75px auto; }
 
@@ -805,9 +773,29 @@ a.mainlinks:focus, #cfa:focus {
   .social img {
     width: 35%; } }
 
+@media only screen and (max-width: 320px){
+    .project-thumbnail{
+        width: 100px;
+        height: 80px;
+    }
+    
+    .thumbnails{
+        flex-direction: column;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   html {
     font-size: .9em; }
+    
+    .project-thumbnail{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .thumbnails{
+        flex-direction: column;
+    }
 
   #above-fold {
     width: 100%;
@@ -864,10 +852,8 @@ a.mainlinks:focus, #cfa:focus {
   h1 {
     font-size: 1.5em; }
 
-  h2 {
-    font-size: 1.2em; }
-
   h3 {
+      margin: 50px 10px;
     font-size: 1em; }
 
   .navigation {
@@ -1032,13 +1018,7 @@ a.mainlinks:focus, #cfa:focus {
     margin: auto 0; }
 
   .social img {
-    width: 25%; }
-
-  .tech-logos div {
-    margin: 5% auto; }
-
-  .level-2-logo-title, #gradesOL, #gradesAL, #gradesCOL {
-    display: none; } 
+    width: 35%; } 
     
 }
 

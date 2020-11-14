@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="731" width="411">
+  <defs>
+    <rect id="rect-2" opacity="1" x="219" y="643" width="175" height="66"/>
+    <mask id="mask-3" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0">
+      <rect opacity="1" x="0" y="0" width="411" height="731" fill="black"/>
+      <use xlink:href="#rect-2" fill="white"/>
+    </mask>
+    <rect id="rect-6" opacity="1" x="18" y="643" width="175" height="66"/>
+    <mask id="mask-7" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0">
+      <rect opacity="1" x="0" y="0" width="411" height="731" fill="black"/>
+      <use xlink:href="#rect-6" fill="white"/>
+    </mask>
+    <rect id="rect-10" opacity="1" x="63" y="151" width="287" height="76"/>
+    <rect id="rect-11" opacity="1" x="63" y="151" width="287" height="76"/>
+    <rect id="rect-13" opacity="1" x="18" y="265" width="376" height="201"/>
+    <mask id="mask-14" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0">
+      <rect opacity="1" x="0" y="0" width="411" height="731" fill="black"/>
+      <use xlink:href="#rect-13" fill="white"/>
+    </mask>
+    <rect id="rect-21" opacity="1" x="219" y="18" width="175" height="66"/>
+    <mask id="mask-22" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0">
+      <rect opacity="1" x="0" y="0" width="411" height="731" fill="black"/>
+      <use xlink:href="#rect-21" fill="white"/>
+    </mask>
+  </defs>
+  <g>
+    <g opacity="1">
+      <path fill="rgb(200,200,200)" fill-opacity="1" opacity="1" fill-rule="evenodd" d="M-1.1102230246251565e-16 731L-1.1102230246251565e-16 189L411 444.647577092511L411 731L-1.1102230246251565e-16 731Z"/>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#rect-2" fill="rgb(79,79,79)" fill-opacity="1"/>
+      <use xlink:href="#rect-2" fill-opacity="0" stroke="rgb(128,128,128)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" mask="url(#mask-3)"/>
+      <g opacity="1">
+        <rect fill="rgb(79,79,79)" fill-opacity="1" opacity="1" x="219" y="643" width="175" height="66"/>
+      </g>
+      <g>
+        <text opacity="1" font-size="0" transform="translate(286, 665)">
+          <tspan fill="rgb(255,255,255)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Next</tspan>
+        </text>
+      </g>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#rect-6" fill="rgb(79,79,79)" fill-opacity="1"/>
+      <use xlink:href="#rect-6" fill-opacity="0" stroke="rgb(128,128,128)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" mask="url(#mask-7)"/>
+      <g opacity="1">
+        <rect fill="rgb(79,79,79)" fill-opacity="1" opacity="1" x="18" y="643" width="175" height="66"/>
+      </g>
+      <g>
+        <text opacity="1" font-size="0" transform="translate(83, 665)">
+          <tspan fill="rgb(255,255,255)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Back</tspan>
+        </text>
+      </g>
+    </g>
+    <g opacity="1">
+      <g opacity="1"/>
+      <g>
+        <text opacity="1" font-size="0" transform="translate(183, 170)">
+          <tspan fill="rgb(79,79,79)" font-size="25" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="23">Fit</tspan>
+        </text>
+      </g>
+    </g>
+    <g opacity="1">
+      <g opacity="1">
+        <use xlink:href="#rect-13" fill-opacity="0" stroke="rgb(128,128,128)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" mask="url(#mask-14)"/>
+      </g>
+      <g opacity="1">
+        <g>
+          <text opacity="1" font-size="0" transform="translate(99, 293)">
+            <tspan fill="rgb(79,79,79)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Classic</tspan>
+          </text>
+        </g>
+        <g opacity="1">
+          <ellipse fill="rgb(79,79,79)" fill-opacity="1" opacity="1" rx="7.5" ry="7.5" cx="77.5" cy="304.5"/>
+        </g>
+      </g>
+      <g opacity="1">
+        <g>
+          <text opacity="1" font-size="0" transform="translate(99, 405)">
+            <tspan fill="rgb(79,79,79)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Super slim</tspan>
+          </text>
+        </g>
+        <g opacity="1">
+          <ellipse fill="rgb(79,79,79)" fill-opacity="1" opacity="1" rx="7.5" ry="7.5" cx="77.5" cy="416.5"/>
+        </g>
+      </g>
+      <g opacity="1">
+        <g>
+          <text opacity="1" font-size="0" transform="translate(99, 352)">
+            <tspan fill="rgb(79,79,79)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Slim</tspan>
+          </text>
+        </g>
+        <g opacity="1">
+          <ellipse fill="rgb(79,79,79)" fill-opacity="1" opacity="1" rx="7.5" ry="7.5" cx="77.5" cy="363.5"/>
+        </g>
+      </g>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#rect-21" fill="rgb(79,79,79)" fill-opacity="1"/>
+      <use xlink:href="#rect-21" fill-opacity="0" stroke="rgb(128,128,128)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" mask="url(#mask-22)"/>
+      <g opacity="1">
+        <rect fill="rgb(79,79,79)" fill-opacity="1" opacity="1" x="219" y="18" width="175" height="66"/>
+      </g>
+      <g>
+        <text opacity="1" font-size="0" transform="translate(249, 40)">
+          <tspan fill="rgb(255,255,255)" font-size="20" font-family="Arial" font-weight="400" style="white-space: pre;text-transform: none" x="0" y="18">Cancel order</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
