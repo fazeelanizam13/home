@@ -17,10 +17,11 @@
   <link rel="apple-touch-icon" href="favicon.ico">
 
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet" href="css/bootstrap.carousel.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bg-animation.css">
 </head>
 
 <body style="overflow-x: hidden">
@@ -52,6 +53,7 @@
       </div>
 
       <div class="menu-overlay">
+        <a href="#about-me">About Me</a>
         <a href="#education">Education</a>
         <a href="#skills-and-exp">Skills & Experience</a>
         <a href="#cv">Download My<br>CV</a>
@@ -60,69 +62,103 @@
     </div>
 
     <div class="main">
+      <div class="section" id="above-fold">
+
+        <div class="text">
+          <div class="greeting">
+            <p>
+              Hello there!
+            </p>
+          </div>
+
+          <div class="intro">
+            <p>
+              I'm Fazeela, someone who's short, and enjoys working with colors.
+            </p>
+          </div>
+
+          <div class="cfa">
+            <a class="mainlinks" id="cfa" href="#about-me">
+              <p>
+                Get to know more
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="graphic">
+          <div class="sky"></div>
+
+          <div class="stem" id="s3">
+            <div class="outer" id="f3-o">
+              <div class="inner" id="f3-i"></div>
+            </div>
+          </div>
+
+          <div class="stem" id="s1">
+            <div class="outer" id="f1-o">
+              <div class="inner" id="f1-i"></div>
+            </div>
+          </div>
+
+          <div class="stem" id="s2">
+            <div class="outer" id="f2-o">
+              <div class="inner" id="f2-i"></div>
+            </div>
+          </div>
+
+          <div class="land">
+            <div class="grass"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="section" id="about-me">
-        <h1>About Me</h1>
-
         <div class="text-content">
           <p>
-            Hello there!
-          </p>
-
-          <p>
-            I'm Fazeela, someone who's short and loves to work with colors.<br>
-            To be specific, I'm the most interested in how websites look and make you feel and, a myriad of other
-            changes that adds to your experience when you surf the web.<br>
-            Or what I gather as what front-end web development is all about. (Just why did I not say this already??)
-          </p>
-
-          <p>
-            I've always been into making frequent visits to those little and beautiful corners of web, that either
-            taught me to create things, assisted me in learning, helped me find people with like-minds, and sometimes
-            even throw in my judgemental/approving two cents on things that excited me and was important to me.<br>
-            So, I guess my mostly positive experiences on the web, attention to detail and adaptivity to new things
-            together as one inspired me to focus on web-design.
-          </p>
-
-          <p>
-            When I'm not typing away at my computer, you would find me still typing away at my computer, but like I
-            said, my love of colors has unapologetically seeped into flowers, fabric, desserts and more!
-          </p>
-
-          <p>
-            I might as well share a few of my traits that would help shed light on who I am and what I can do:
+            I'm currently a third year undergraduate at Rajarata University of Sri Lanka, focusing on the subjects
+            Computer Science and Mathematics for my Bachelor of Applied Sciences degree.<br />
+            My dream career happens to lie in the areas of <strong>UI/UX Design</strong>, <strong>Product
+              Design</strong> and <strong>Front-End Development.</strong>
           </p>
         </div>
 
-        <h2>Thriving in different cultural and social settings.</h2>
-
         <div class="text-content">
           <p>
-            This is greatly due to the fact that I have been raised in an environment where people of various races and
-            beliefs lived. This means I have no trouble communicating in just about any language used within the
-            country.
+            Let me share some of my traits as to who I am and what I can do:
           </p>
         </div>
 
-        <h2>Ability to learn completely new things.</h2>
+        <h3 class="traits">Thriving in different cultural and social settings.</h3>
 
         <div class="text-content">
           <p>
-            One of my quite consistent leisurely activities since long has been learning foreign languages. I teach
-            myself solely through online resources, so I think this is a very fitting example for how far I can push
-            myself when it comes to what I love to do and especially my capability to educate myself and absorb concepts
-            that I even might not have ever been exposed to before, without assistance or supervision. I think that is
-            an absolutely beneficial trait for someone in the ever changing industry of information technology to have.
+            Thanks to the fact that I've been raised in an multi-cultural environment I'm a fluent communicator in just
+            about any language used within the country, and I get along with people quite easily.
           </p>
         </div>
 
-        <h2>Ability to multi-task.</h2>
+        <h3 class="traits">Ability to learn completely new things.</h3>
 
         <div class="text-content">
           <p>
-            I have a tendency to start several tasks at once or do so during the progression of another, so that I don’t
-            get bored dedicating my focus on a single thing for a long period of time. This can divide my attention, but
-            the distraction is rather therapeutic to me and at the same time, I have several completed tasks at the end
-            with seemingly less effort and stress.
+            One of my quite consistent leisurely activities since long has been learning foreign languages. Teaching
+            myself solely through online resources, I think is a very fitting example for how far I can push myself when
+            it comes to what I love to do and my capability to educate myself and absorb concepts that are completely
+            new to me, without assistance or supervision.<br />
+            I think that is an absolutely beneficial trait for someone in the ever changing industry of information
+            technology to have.
+          </p>
+        </div>
+
+        <h3 class="traits">Ability to multi-task.</h3>
+
+        <div class="text-content">
+          <p>
+            Something I'm not so guilty of, is my tendency to start several tasks at once or do so during the
+            progression of another, so that I don’t get bored dedicating my focus on a single thing for a long period of
+            time.<br />
+            This usually divides my attention, but the distraction is rather therapeutic to me.
           </p>
         </div>
       </div>
@@ -144,8 +180,8 @@
 
         <div class="text-content">
           <p>
-            The following chart will give you a brief overview of the courses drawn from the above mentioned disciplines
-            that I have been following during my time in university up to now.
+            What follows is an overview of the courses drawn from the above disciplines that I have been following
+            during my time in university up to now.
           </p>
         </div>
 
@@ -362,6 +398,8 @@
 
         <!--                <hr />-->
 
+        <h3>Volunteering Experience</h3>
+
         <div class="text-content">
           <p>
             As a university student, I've had the opportunity to be in positions that are responsible yet fulfilling and
@@ -392,6 +430,28 @@
               class="mainlinks" target="_blank">GGSLK Media</a> YouTube channel as well as to join in the reviewing
             process of initial articles that are submitted by new applicants for volunteer positions as writers.
           </p>
+        </div>
+
+        <h4>Moments out of my time as a volunteer:</h4>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/67926719_1100607323661260_7760167929982746624_o.jpg" class="center-block" />
+            </div>
+
+            <div class="item">
+              <img src="img/45265665_900570773664917_7434769095830011904_o.jpg" class="center-block" />
+            </div>
+
+            <div class="item">
+              <img src="img/47220502_919101281811866_9168688204004458496_o.jpg" class="center-block" />
+            </div>
+          </div>
+
+          <p class="credits">Image source: <a class="mainlinks" href="https://www.facebook.com/FasFocusUnity/">FAS Focus
+              Unity</a></p>
         </div>
 
         <!--
@@ -433,10 +493,9 @@
 
         <div class="text-content">
           <p>
-            Want to get to know me better somewhere that you frequent more? Everyone has their poison, so choose yours
-            out of mine, or you can even say hi through an email! We can talk about what YOU do and what YOUr plans are,
-            and what's more, I might even be able to contribute with what I'm amazing at, to get you one step closer to
-            where you are headed toward :)
+            Want to get to know me better? Or we can talk about what YOU do and what YOUr plans are, and what's more, I
+            might even be able to contribute with what I'm amazing at, to get you one step closer to where you are
+            headed toward :)
           </p>
         </div>
 
@@ -454,7 +513,7 @@
 
       <div class="back-to-top">
         <span class="back-to-top-circle"></span>
-        <a href="#about-me" class="back-to-top-link">
+        <a href="#" class="back-to-top-link">
           <span class="back-to-top-icon">
             <span class="up"></span>
           </span>
@@ -464,6 +523,8 @@
 
     <footer>
       <p>Copyright &copy; 2019 Fazeela Nizam</p>
+      <p style="font-size: .9em; text-align: center; margin-top: 0">This site's been hand-coded using pure HTML, CSS and
+        Javascript.</p>
     </footer>
   </div>
 
@@ -535,7 +596,7 @@
     };
 
     $(window).on('resize scroll', function () {
-      $('h2').each(function () {
+      $('h3.traits').each(function () {
         if ($(this).isInViewport()) {
           $(this).addClass('come-in');
         }
