@@ -20,15 +20,14 @@
   font-weight: normal;
   font-style: normal; }
 
-.thumbnails{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center
+
+
+.overlay-wrapper{
+    width: 100%
 }
 
-.thumbnail{
-    padding: 20px 0;
+.project-thumbnail-overlay{
+    width: 100%
 }
 
 .p-thumb{
@@ -40,7 +39,9 @@
     height: 240px; 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    border: 1px #ccc solid;
+    margin: 30px;
 }
 
 .thumb1{
@@ -49,6 +50,14 @@
 
 .thumb2{
     background-image: url(../img/project2.png);
+}
+
+.thumb3{
+    background-image: url(../img/project3.png);
+}
+
+.thumb4{
+    background-image: url(../img/project4.png);
 }
 
 .project-thumbnail-overlay{
@@ -68,6 +77,14 @@
 
 .overlay2{
     background-color: #F06464;
+}
+
+.overlay3{
+    background-color: #61c6ab;
+}
+
+.overlay4{
+    background-color: #8c1837;
 }
 
 .project-title{
@@ -652,6 +669,9 @@ a.mainlinks:focus, #cfa:focus {
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .logo img {
     width: 40%; }
+    
+    .thumbnail{
+float: left}
 
   .tech-logos img {
     width: 12%;
@@ -672,6 +692,9 @@ a.mainlinks:focus, #cfa:focus {
     padding: 15px 0;
       z-index: 3;}
 
+    .thumbnail{
+float: left}
+    
   .menu-overlay a {
     display: flex;
     flex-direction: row;
@@ -719,6 +742,9 @@ a.mainlinks:focus, #cfa:focus {
 
   .intro {
     font-size: 1.1em; }
+    
+    .thumbnail{
+float: left}
 
   .cfa {
     width: 40%;
@@ -780,8 +806,11 @@ a.mainlinks:focus, #cfa:focus {
     }
     
     .thumbnails{
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -794,8 +823,11 @@ a.mainlinks:focus, #cfa:focus {
     }
     
     .thumbnails{
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
 
   #above-fold {
     width: 100%;

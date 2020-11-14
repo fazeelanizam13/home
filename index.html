@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Fazeela Nizam - UI/UX Designer, Front-End Developer</title>
@@ -116,7 +117,6 @@
                     
                 </div>
 
-                
                 <h3>Education:</h3>
 
                 <div class="logo-title">
@@ -142,35 +142,34 @@
                 <h3>Moments out of my time as a volunteer:</h3>
                         
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src = "img/67926719_1100607323661260_7760167929982746624_o.jpg" class = "center-block" />
+						</div>
+						
+						<div class="item">
+							<img src = "img/45265665_900570773664917_7434769095830011904_o.jpg" class = "center-block" />
+						</div>
+						
+						<div class="item">
+							<img src = "img/47220502_919101281811866_9168688204004458496_o.jpg" class = "center-block" />
+						</div>
+						
+						<div class="item">
+							<img src = "img/IMG_20190928_023624 (2).jpg" class = "center-block" />
+						</div>
+						
+						<div class="item">
+							<img src="img/72797134_10159094185534535_6573435991850221568_o.jpg" class = "center-block" />
+						</div>
+						
+						<div class="item">
+							<img src="img/72742890_1470140219810716_9113597813844869120_o.jpg" class = "center-block" />
+						</div>
+					</div>
                             
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src = "img/67926719_1100607323661260_7760167929982746624_o.jpg" class = "center-block" />
-                                </div>
-                                
-                                <div class="item">
-                                    <img src = "img/45265665_900570773664917_7434769095830011904_o.jpg" class = "center-block" />
-                                </div>
-                                
-                                <div class="item">
-                                    <img src = "img/47220502_919101281811866_9168688204004458496_o.jpg" class = "center-block" />
-                                </div>
-                                
-                                <div class="item">
-                                    <img src = "img/IMG_20190928_023624 (2).jpg" class = "center-block" />
-                                </div>
-                                
-                                <div class="item">
-                                    <img src="img/72797134_10159094185534535_6573435991850221568_o.jpg" class = "center-block" />
-                                </div>
-                                
-                                <div class="item">
-                                    <img src="img/72742890_1470140219810716_9113597813844869120_o.jpg" class = "center-block" />
-                                </div>
-                            </div>
-                            
-                            <p class="credits">Image sources include: <a class="mainlinks" href="https://www.facebook.com/FasFocusUnity/">FAS Focus Unity</a></p>
-                        </div>
+					<p class="credits">Image sources include: <a class="mainlinks" href="https://www.facebook.com/FasFocusUnity/">FAS Focus Unity</a></p>
+                </div>
             </div>
 
             <div class="section" id="projects">
@@ -206,6 +205,42 @@
 
                                        <p class="project-description">
                                            A Web App which displays basic information about a given Chinese character (built using ReactJS.)
+                                       </p>
+                                   </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="thumbnail">
+                        <a href="https://fazeelanizam13.github.io/mozilla-rusl/" class="p-thumb" target="_blank" class="mainlinks" style="text-decoration: none">
+                            <div class="project-thumbnail thumb3">
+                                <div class="overlay-wrapper wrapper3" style="display: none; width: 100%; height: 100%">
+                                   <div class="project-thumbnail-overlay overlay3">
+                                       <p class="project-title">
+                                           Offcial Homepage: Mozilla Campus Club - RUSL
+                                       </p>
+
+                                       <p class="project-description">
+                                           Developed as an entry for the single-page web design hackathon conducted by the Mozilla Campus Club of Rajarata University of Sri Lanka.
+                                       </p>
+                                   </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="thumbnail">
+                        <a href="http://fazeelanizam.com/notes/" class="p-thumb" target="_blank" class="mainlinks" style="text-decoration: none">
+                            <div class="project-thumbnail thumb4">
+                                <div class="overlay-wrapper wrapper4" style="display: none; width: 100%; height: 100%">
+                                   <div class="project-thumbnail-overlay overlay4">
+                                       <p class="project-title">
+                                           Note-Taking App
+                                       </p>
+
+                                       <p class="project-description">
+                                           A note taking app which imitates database functionality through local storage, written using React Hooks.
                                        </p>
                                    </div>
                                 </div>
@@ -297,6 +332,20 @@
                 function(e) {
                     e.preventDefault();
                     $('.wrapper2').fadeToggle();
+                }
+            );
+            
+            $('.thumb3').hover(
+                function(e) {
+                    e.preventDefault();
+                    $('.wrapper3').fadeToggle();
+                }
+            );
+            
+            $('.thumb4').hover(
+                function(e) {
+                    e.preventDefault();
+                    $('.wrapper4').fadeToggle();
                 }
             );
         });
