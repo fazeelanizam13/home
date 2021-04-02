@@ -1,115 +1,148 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 @font-face {
-  font-family: 'EBGaramond-Medium';
+  font-family: "EBGaramond-Medium";
   src: url("../fonts/EBGaramond-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'EBGaramond-Regular';
+  font-family: "EBGaramond-Regular";
   src: url("../fonts/EBGaramond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'EBGaramond-SemiBold';
+  font-family: "EBGaramond-SemiBold";
   src: url("../fonts/EBGaramond-SemiBold.ttf") format("truetype");
 }
-
-html{
+html,
+body {
   font-family: EBGaramond-Regular;
   font-size: 18px;
   background-color: black;
   color: #eee;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
-.text p,
-.work .title,
-.project .title{
-  font-family: EBGaramond-SemiBold;
+* {
+  box-sizing: border-box;
 }
-::-webkit-scrollbar{
-  width: 0;
+::-webkit-scrollbar {
+  width: 2px;
 }
-a{
-  transition: all .5s ease;
+::-webkit-scrollbar-track {
+  background-color: #000;
 }
-a:not(.work .content a){
+::-webkit-scrollbar-thumb {
+  background-color: rgb(57, 23, 92);
+}
+#sky {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background: #000;
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(32, 13, 51, 1) 40%,
+    rgba(33, 13, 54, 1) 60%,
+    rgba(57, 23, 92, 1) 90%,
+    rgba(67, 26, 110, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(32, 13, 51, 1) 40%,
+    rgba(33, 13, 54, 1) 60%,
+    rgba(57, 23, 92, 1) 90%,
+    rgba(67, 26, 110, 1) 100%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(32, 13, 51, 1) 40%,
+    rgba(33, 13, 54, 1) 60%,
+    rgba(57, 23, 92, 1) 90%,
+    rgba(67, 26, 110, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#431a6e",GradientType=1);
+}
+.star {
+  z-index: 1;
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin: 7px;
+}
+@keyframes pulseSlow {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes pulseFast {
+  0% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+#horizon {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+}
+a {
+  transition: all 0.5s ease;
+}
+a:not(.work .content a) {
   color: #978ba8;
   text-decoration: none;
   border: 1px solid transparent;
 }
-a:not(.work .content a):hover{
+a:not(.work .content a):hover {
   border-bottom: 1px solid #978ba8;
 }
-a:not(.work .content a):visited{
+a:not(.work .content a):visited {
   color: #978ba8;
 }
-body{
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-.box{
-  width: 100vw;
-}
-.above-fold{
+.below-fold {
+  width: 80%;
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to right,white 50%, black 50%);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.text{
-  background-color: #978ba895;
-  width: 75%;
-  height: 50%;
-  border-radius: 2px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.text img{
-  position: relative;
-  top: -10%;
-  height: 45%;
-  border-radius: 50%;
-}
-.text p{
-  background: linear-gradient(to right, black 50%, white 50%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text p:first-child{
-  font-size: 2rem;
-}
-.text p:nth-child(2){
-  font-size: 1.5rem;
-}
-.below-fold{
-  width: 75%;
-  margin: auto;
-  position: relative;
   top: 100vh;
+  left: 10%;
 }
-.work{
+.work {
   width: 100%;
 }
-.work > .title p{
+.work > .title p {
   font-size: 1.5rem;
   text-align: center;
   margin: 0;
-  padding: 10% 0
+  padding: 10% 0;
 }
-.work .content{
+.work .content {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -117,7 +150,7 @@ body{
   justify-content: space-evenly;
   padding-bottom: 10vh;
 }
-.work .content a{
+.work .content a {
   width: 40%;
   padding: 3%;
   margin: 2%;
@@ -125,27 +158,39 @@ body{
   text-decoration: none;
   border-radius: 2px;
 }
-.work .content a:hover{
+.work .content a:hover {
   filter: brightness(1.5);
 }
-.project .title p{
+.project .title p {
   text-align: center;
   font-size: 1.2rem;
 }
-.project .content p{
+.project .content p {
   font-size: 1rem;
   line-height: 1.4rem;
 }
-.project .content{
+.project .content {
   border-top: 1px solid #eee;
 }
-a.project-1{  background-color: #4a0c55;}
-a.project-2{  background-color: #884163;}
-a.project-3{  background-color: #b84949;}
-a.project-4{  background-color: #3e8673;}
-a.project-5{  background-color: #050A26;}
-a.project-6{  background-color: #8c1837;}
-.footer .content{
+a.project-1 {
+  background-color: #4a0c55;
+}
+a.project-2 {
+  background-color: #884163;
+}
+a.project-3 {
+  background-color: #b84949;
+}
+a.project-4 {
+  background-color: #3e8673;
+}
+a.project-5 {
+  background-color: #050a26;
+}
+a.project-6 {
+  background-color: #8c1837;
+}
+.footer .content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -154,45 +199,45 @@ a.project-6{  background-color: #8c1837;}
   text-align: center;
   height: 20vh;
   padding-top: 2vh;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.footer p{
+.footer p {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.footer a{
+.footer a {
   color: #eee;
   text-decoration: none;
   border: 1px solid transparent;
 }
-.footer a:hover{
+.footer a:hover {
   border-bottom: 1px solid #eee;
 }
-.footer p:last-child{
+.footer p:last-child {
   justify-content: center;
 }
-.footer img{
+.footer img {
   margin: 10px;
 }
 
-@media only screen and (max-width: 768px){
-  html{
+@media only screen and (max-width: 768px) {
+  html {
     font-size: 16px;
   }
-  .below-fold{
+  .below-fold {
     width: 100%;
   }
-  .work .content{
+  .work .content {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .work .content a{
+  .work .content a {
     width: 90%;
   }
-  .footer p:first-child{
+  .footer p:first-child {
     width: 75%;
   }
 }
