@@ -286,11 +286,15 @@
         if (star.style.width == "1px" && star.style.opacity < 0.3)
           star.style.animation = "pulseFast 1s infinite";
 
-        if (star.style.width == "1px" && star.style.opacity == 0.3)
+        if (
+          star.style.width == "1px" &&
+          star.style.opacity > 0.3 &&
+          star.style.opacity < 0.4
+        )
           star.style.animation = "pulseFast .7s infinite";
 
         // bigger, brighter ones
-        if (star.style.width == "2px" && star.style.opacity >= 0.5)
+        if (star.style.width == "2px" && star.style.opacity > 0.5)
           star.style.animation = "pulseSlow 1.6s infinite";
       });
     </script>
