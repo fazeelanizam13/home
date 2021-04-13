@@ -245,7 +245,9 @@
       const totalStars = starsAlongWidth * starsAlongHeight;
 
       // as mentioned above, since we'll have bigger amount of spaces between stars, we cut total number of stars by, a lot
-      for (let i = 1; i < totalStars / 11; i++) {
+      const REAL_TOTAL_NO_OF_STARS = totalStars / 11;
+
+      for (let i = 1; i < REAL_TOTAL_NO_OF_STARS; i++) {
         // clone the first star
         const newStar = star.cloneNode(true);
 
@@ -297,6 +299,32 @@
         if (star.style.width == "2px" && star.style.opacity > 0.5)
           star.style.animation = "pulseSlow 1.6s infinite";
       });
+
+      // function that shoots a star after one another
+      const shootStar = (index, gapInMiliSeconds) => {
+        setTimeout(() => {
+          // choose a random star
+          const randomStarIndex = Math.floor(
+            Math.random() * (REAL_TOTAL_NO_OF_STARS - 0) + 0
+          );
+
+          const randomStar = Array.from(stars)[randomStarIndex];
+
+          // set shooting animation
+          randomStar.style.animation = "shoot 2s 1";
+        }, gapInMiliSeconds * index);
+      };
+
+      // we decide the visitor will 10 shooting stars
+      for (let i = 0; i < 20; i++) {
+        // random gap between this star and the next
+        const gapInMiliSeconds = Math.floor(
+          Math.random() * (5000 - 1000) + 1000
+        );
+
+        // shoot
+        shootStar(i, gapInMiliSeconds);
+      }
     </script>
     <script
       src="https://www.google-analytics.com/analytics.js"
