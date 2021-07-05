@@ -26,13 +26,7 @@ body {
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-track {
-  background-color: #000;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgb(57, 23, 92);
+  width: 0px;
 }
 #sky {
   z-index: 0;
