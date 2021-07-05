@@ -153,13 +153,11 @@ a:not(.work .content a):visited {
 }
 .work .content {
   width: 100%;
-  padding-bottom: 10vh;
-}
-.content.code{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 10vh;
 }
 .work .content a {
   width: 40%;
@@ -208,6 +206,7 @@ a.project-6 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 20vh;
   padding-top: 2vh;
   font-size: 0.9rem;
 }
@@ -236,15 +235,6 @@ a.project-6 {
     width: 90%;
   }
   .footer p:first-child {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 512px){
-  .tabs .title p{
-    font-size: .9rem;
-  }
-  .footer p{
     width: 90%;
   }
 }
