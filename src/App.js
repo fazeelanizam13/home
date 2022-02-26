@@ -1,10 +1,10 @@
 import "./App.css";
 import { Home, Shirts, HermosaBranding, ChamomileTeaPattern, BloodOrangePattern, GesturesPattern } from './components'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 export function App() {
   return (
-    <Router>
+    <Router base="/">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/dressmaking-workshop-app" element={<Shirts />} />
