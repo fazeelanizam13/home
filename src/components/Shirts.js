@@ -397,7 +397,7 @@ export default function Home() {
           usage="for project thumbnail, header and footer"
           photographers={[
             {
-              href: "https://unsplash.com/s/photos/table-and-book?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+              href: "https://unsplash.com/@jonathanborba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
               name: "Jonathan Borba"
             }
           ]}
@@ -407,3 +407,4 @@ export default function Home() {
     </>
   )
 }
+  
