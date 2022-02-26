@@ -1,6 +1,6 @@
 import "./App.css";
 import { Home, Shirts, HermosaBranding, ChamomileTeaPattern, BloodOrangePattern, GesturesPattern } from './components'
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export function App() {
   return (
