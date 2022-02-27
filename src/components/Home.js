@@ -86,7 +86,7 @@ export default function Home() {
     },
     {
       vector: flowers,
-      title: <>manually vectorized <Anchor
+      title: <>.manually vectorized <Anchor
         href="https://www.instagram.com/p/CYafZJ2oVN-/"
         customStyles={{ color: "#958ed9" }}>image</Anchor> using Adobe Illustrator</>,
       customStyles: { backgroundImage: `url(${flowers})` }
