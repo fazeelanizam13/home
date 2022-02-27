@@ -86,7 +86,7 @@ export default function Home() {
     },
     {
       vector: flowers,
-      title: <>0manually vectorized <Anchor
+      title: <>manually vectorized <Anchor
         href="https://www.instagram.com/p/CYafZJ2oVN-/"
         customStyles={{ color: "#958ed9" }}>image</Anchor> using Adobe Illustrator</>,
       customStyles: { backgroundImage: `url(${flowers})` }
@@ -142,6 +142,7 @@ export default function Home() {
     // },
     {
       href: "https://fazeelanizam13.github.io/hanzi-guide/",
+      hrefType: 'external',
       customStyles: { 
         backgroundImage: 'url("https://fazeelanizam13.github.io/hanzi-guide/static/media/lantern.96202190.svg")',
         backgroundPosition: 'top right' 
@@ -151,6 +152,7 @@ export default function Home() {
     },
     {
       href: "https://fazeelanizam13.github.io/mozilla-rusl/",
+      hrefType: 'external',
       customStyles: { 
         backgroundImage: 'url("https://fazeelanizam13.github.io/mozilla-rusl/img/above-fold-pic.jpg")',
         backgroundPosition: 'center bottom' 
@@ -230,8 +232,8 @@ export default function Home() {
 
             <div className="tab-content" id="four">
               {
-                codingProjects.map(({ href, customStyles, title, content }) => (
-                  <Anchor href={href} customStyles={customStyles} key={href}>
+                codingProjects.map(({ href, hrefType, customStyles, title, content }) => (
+                  <Anchor href={href} hrefType={hrefType} customStyles={customStyles} key={href}>
                     <Project title={title} content={content} />
                   </Anchor>
                 ))
