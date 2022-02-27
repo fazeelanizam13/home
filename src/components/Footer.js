@@ -1,23 +1,25 @@
-import { Anchor } from "."
+const CustomLink = ({ href, text }) => (
+  <a href={href} target="_blank" rel="noreferrer">{text}</a>
+)
 
 export default function Footer() {
   return (
     <div className="footer">
       <p>
         {/* <span>
-            <Anchor href="https://fazeelanizam13.github.io/blog/">Developer Diaries</Anchor>
+            <CustomLink href="https://fazeelanizam13.github.io/blog/">Developer Diaries</CustomLink>
           </span>
           <span>|</span> */}
         <span>
-          <Anchor href="https://www.linkedin.com/in/fazeelanizam/">LinkedIn</Anchor>
+          <CustomLink href="https://www.linkedin.com/in/fazeelanizam/" text="LinkedIn" />
         </span>
         <span>|</span>
         <span>
-          <Anchor href="https://github.com/fazeelanizam13">GitHub</Anchor>
+          <CustomLink href="https://github.com/fazeelanizam13" text="GitHub" />
         </span>
         <span>|</span>
         <span>
-          <Anchor href="https://www.instagram.com/fazeelanizam13/">Instagram</Anchor>
+          <CustomLink href="https://www.instagram.com/fazeelanizam13/" text="Instagram" />
         </span>
       </p>
 
