@@ -410,7 +410,7 @@ ul li {
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .below-fold {
     width: 100%;
