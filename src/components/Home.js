@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import horizon from '../images/horizon.svg'
 import coffee from '../images/vectors/coffee.svg'
 import flowers from '../images/vectors/flowers.svg'
+import lamps from '../images/vectors/lamps.svg'
 
 import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
 import shirtsPreview from '../images/shirts/shirts-header.jpg'
@@ -52,9 +53,12 @@ const Project = ({ vector, title, content, customStyles, setVisibleProject }) =>
       document.getElementsByTagName('html')[0].classList.add('project-open')
     }
   }}>
-    <div className="title">
-      <p>{title}</p>
-    </div>
+    {
+      title &&
+        <div className="title">
+          <p>{title}</p>
+        </div>
+    }
 
     {
       content &&
@@ -96,6 +100,10 @@ export default function Home() {
       href: '/chamomile-tea-pattern',
       title: "themed repeating surface pattern - chamomile flowers and tea cups",
       customStyles: { backgroundImage: `url(${teaSwatch})` }
+    },
+    {
+      vector: lamps,
+      customStyles: { backgroundImage: `url(${lamps})` }
     },
     {
       // vector: flowers, // no 'vector' as project opens in a new route

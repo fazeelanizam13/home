@@ -277,7 +277,7 @@ p:not('.footer p'), span {
 .projectCloseButton {
   position: fixed;
   top: 10vh;
-  right: 0;
+  right: 10vh;
   background-image: url('images/close.svg');
   width: 70px;
   height: 70px;
