@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <div className="footer">
       <p>
-        {/* <span>
-            <CustomLink href="https://fazeelanizam13.github.io/blog/">Developer Diaries</CustomLink>
+        <span>
+            <CustomLink href="https://fazeelanizam13.github.io/blog/" text="Blog" />
           </span>
-          <span>|</span> */}
+          <span>|</span>
         <span>
           <CustomLink href="https://www.linkedin.com/in/fazeelanizam/" text="LinkedIn" />
         </span>

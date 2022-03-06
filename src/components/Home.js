@@ -3,6 +3,7 @@ import horizon from '../images/horizon.svg'
 import coffee from '../images/vectors/coffee.svg'
 import flowers from '../images/vectors/flowers.svg'
 import lamps from '../images/vectors/lamps.svg'
+import swissCheese from '../images/vectors/swiss-cheese.svg'
 
 import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
 import shirtsPreview from '../images/shirts/shirts-header.jpg'
@@ -53,19 +54,9 @@ const Project = ({ vector, title, content, customStyles, setVisibleProject }) =>
       document.getElementsByTagName('html')[0].classList.add('project-open')
     }
   }}>
-    {
-      title &&
-        <div className="title">
-          <p>{title}</p>
-        </div>
-    }
-
-    {
-      content &&
-      <div className="content">
-        <p>{content}</p>
-      </div>
-    }
+    <div className="overlay">
+      <div className="viewProjectButton"></div>
+    </div>
   </div>
 )
 
@@ -84,21 +75,18 @@ export default function Home() {
   const vectors = [
     {
       href: '/branding-assets-hermosa',
-      title: "brand collateral for 'Hermosa'",
-      content: "print and digital branding assets for a clothing label",
       customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
     },
     {
+      vector: swissCheese,
+      customStyles: { backgroundImage: `url(${swissCheese})` }
+    },
+    {
       vector: flowers,
-      title: <>manually vectorized <Anchor
-        href="https://www.instagram.com/p/CYafZJ2oVN-/"
-        customStyles={{ color: "#958ed9" }}>image</Anchor> using Adobe Illustrator</>,
       customStyles: { backgroundImage: `url(${flowers})` }
     },
     {
-      // vector: flowers, // no 'vector' as project opens in a new route
       href: '/chamomile-tea-pattern',
-      title: "themed repeating surface pattern - chamomile flowers and tea cups",
       customStyles: { backgroundImage: `url(${teaSwatch})` }
     },
     {
@@ -106,22 +94,15 @@ export default function Home() {
       customStyles: { backgroundImage: `url(${lamps})` }
     },
     {
-      // vector: flowers, // no 'vector' as project opens in a new route
       href: '/blood-orange-pattern',
-      title: "themed repeating surface pattern - blood orange slices",
       customStyles: { backgroundImage: `url(${orangeSwatch})` }
     },
     {
-      // vector: flowers, // no 'vector' as project opens in a new route
       href: '/gestures-pattern',
-      title: "themed repeating surface pattern - hand gestures and violets",
       customStyles: { backgroundImage: `url(${gesturesSwatch})` }
     },
     {
       vector: coffee,
-      title: <>manually vectorized <Anchor
-        href="https://unsplash.com/photos/RCfalHrnFAs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-        customStyles={{ color: "#e6aa66" }}>image</Anchor> using Adobe Illustrator</>,
       customStyles: { backgroundImage: `url(${coffee})` }
     },
   ]
@@ -151,9 +132,9 @@ export default function Home() {
     {
       href: "https://fazeelanizam13.github.io/hanzi-guide/",
       hrefType: 'external',
-      customStyles: { 
+      customStyles: {
         backgroundImage: 'url("https://fazeelanizam13.github.io/hanzi-guide/static/media/lantern.96202190.svg")',
-        backgroundPosition: 'top right' 
+        backgroundPosition: 'top right'
       },
       title: "han-zi guide",
       content: "a ReactJS app which displays basic information about a given Chinese character"
@@ -161,9 +142,9 @@ export default function Home() {
     {
       href: "https://fazeelanizam13.github.io/mozilla-rusl/",
       hrefType: 'external',
-      customStyles: { 
+      customStyles: {
         backgroundImage: 'url("https://fazeelanizam13.github.io/mozilla-rusl/img/above-fold-pic.jpg")',
-        backgroundPosition: 'center bottom' 
+        backgroundPosition: 'center bottom'
       },
       title: "offcial homepage: Mozilla Campus Club - RUSL",
       content: "developed as an entry for the single-page web design hackathon conducted by the Mozilla Campus Club of Rajarata University of Sri Lanka."
@@ -187,7 +168,7 @@ export default function Home() {
         <div className="work">
           <div className="tabs">
             {/* <Tab label="vectors 〰️➰" tabContentID="one" /> */}
-            <Tab label="mockups 📱 and vector illustrations 〰️➰" tabContentID="two" defaultTab />
+            <Tab label="mockups 📱 and illustrations 〰️➰" tabContentID="two" defaultTab />
             {/* <Tab label="unexpected inspiration 🎨" tabContentID="three" /> */}
             <Tab label="code ⌨️" tabContentID="four" />
           </div>
