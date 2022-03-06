@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.12eb0fa8.chunk.css",
-    "main.js": "/home/static/js/main.bd89e76c.chunk.js",
-    "main.js.map": "/home/static/js/main.bd89e76c.chunk.js.map",
+    "main.css": "/home/static/css/main.976733fa.chunk.css",
+    "main.js": "/home/static/js/main.6419836b.chunk.js",
+    "main.js.map": "/home/static/js/main.6419836b.chunk.js.map",
     "runtime-main.js": "/home/static/js/runtime-main.ac60b5ef.js",
     "runtime-main.js.map": "/home/static/js/runtime-main.ac60b5ef.js.map",
     "static/js/2.0eda3e8f.chunk.js": "/home/static/js/2.0eda3e8f.chunk.js",
     "static/js/2.0eda3e8f.chunk.js.map": "/home/static/js/2.0eda3e8f.chunk.js.map",
     "index.html": "/home/index.html",
-    "static/css/main.12eb0fa8.chunk.css.map": "/home/static/css/main.12eb0fa8.chunk.css.map",
+    "static/css/main.976733fa.chunk.css.map": "/home/static/css/main.976733fa.chunk.css.map",
     "static/js/2.0eda3e8f.chunk.js.LICENSE.txt": "/home/static/js/2.0eda3e8f.chunk.js.LICENSE.txt",
     "static/media/1applied.b841f17b.png": "/home/static/media/1applied.b841f17b.png",
     "static/media/1swatch.01268c8b.png": "/home/static/media/1swatch.01268c8b.png",
@@ -17,7 +17,7 @@
     "static/media/applied.2cc5a0c4.png": "/home/static/media/applied.2cc5a0c4.png",
     "static/media/applied.3dc94a69.png": "/home/static/media/applied.3dc94a69.png",
     "static/media/assets.7423d168.png": "/home/static/media/assets.7423d168.png",
-    "static/media/App.css": "/home/static/media/close.3bc4ab65.svg",
+    "static/media/App.css": "/home/static/media/view.f41c18c1.svg",
     "static/media/coffee.218ffade.svg": "/home/static/media/coffee.218ffade.svg",
     "static/media/color.01dffc45.svg": "/home/static/media/color.01dffc45.svg",
     "static/media/edits.39cc691a.png": "/home/static/media/edits.39cc691a.png",
@@ -55,6 +55,7 @@
     "static/media/survey-results-3.f10876d1.jpg": "/home/static/media/survey-results-3.f10876d1.jpg",
     "static/media/swatch.848826d9.png": "/home/static/media/swatch.848826d9.png",
     "static/media/swatch.a37ab4c7.png": "/home/static/media/swatch.a37ab4c7.png",
+    "static/media/swiss-cheese.5db8efda.svg": "/home/static/media/swiss-cheese.5db8efda.svg",
     "static/media/task-flows.e18823dc.png": "/home/static/media/task-flows.e18823dc.png",
     "static/media/tipsmeasure.88ebb11b.svg": "/home/static/media/tipsmeasure.88ebb11b.svg",
     "static/media/user-journey-map.4906c1aa.png": "/home/static/media/user-journey-map.4906c1aa.png"
@@ -62,7 +63,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac60b5ef.js",
     "static/js/2.0eda3e8f.chunk.js",
-    "static/css/main.12eb0fa8.chunk.css",
-    "static/js/main.bd89e76c.chunk.js"
+    "static/css/main.976733fa.chunk.css",
+    "static/js/main.6419836b.chunk.js"
   ]
 }
