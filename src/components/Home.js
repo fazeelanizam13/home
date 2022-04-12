@@ -4,7 +4,7 @@ import coffee from '../images/vectors/coffee.svg'
 import flowers from '../images/vectors/flowers.svg'
 import lamps from '../images/vectors/lamps.svg'
 import swissCheese from '../images/vectors/swiss-cheese.svg'
-import angie from '../images/vectors/angie.svg'
+import plum from '../images/vectors/faces/plum.svg'
 
 import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
 import shirtsPreview from '../images/shirts/shirts-header.jpg'
@@ -79,8 +79,8 @@ export default function Home() {
       customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
     },
     {
-      vector: angie,
-      customStyles: { backgroundImage: `url(${angie})` }
+      vector: plum,
+      customStyles: { backgroundImage: `url(${plum})` }
     },
     {
       vector: swissCheese,
