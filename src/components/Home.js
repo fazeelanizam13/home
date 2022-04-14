@@ -5,6 +5,7 @@ import flowers from '../images/vectors/flowers.svg'
 import lamps from '../images/vectors/lamps.svg'
 import swissCheese from '../images/vectors/swiss-cheese.svg'
 import plum from '../images/vectors/faces/plum.svg'
+import navy from '../images/vectors/faces/navy.svg'
 
 import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
 import shirtsPreview from '../images/shirts/shirts-header.jpg'
@@ -75,8 +76,8 @@ export default function Home() {
 
   const vectors = [
     {
-      href: '/branding-assets-hermosa',
-      customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
+      vector: navy,
+      customStyles: { backgroundImage: `url(${navy})` }
     },
     {
       vector: plum,
@@ -95,9 +96,13 @@ export default function Home() {
       customStyles: { backgroundImage: `url(${teaSwatch})` }
     },
     {
-      vector: lamps,
-      customStyles: { backgroundImage: `url(${lamps})` }
+      href: '/branding-assets-hermosa',
+      customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
     },
+    // {
+    //   vector: lamps,
+    //   customStyles: { backgroundImage: `url(${lamps})` }
+    // },
     {
       href: '/blood-orange-pattern',
       customStyles: { backgroundImage: `url(${orangeSwatch})` }
