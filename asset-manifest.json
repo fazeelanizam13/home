@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/home/static/css/main.976733fa.chunk.css",
-    "main.js": "/home/static/js/main.c84c0dbb.chunk.js",
-    "main.js.map": "/home/static/js/main.c84c0dbb.chunk.js.map",
+    "main.js": "/home/static/js/main.b84ed347.chunk.js",
+    "main.js.map": "/home/static/js/main.b84ed347.chunk.js.map",
     "runtime-main.js": "/home/static/js/runtime-main.ac60b5ef.js",
     "runtime-main.js.map": "/home/static/js/runtime-main.ac60b5ef.js.map",
     "static/js/2.0eda3e8f.chunk.js": "/home/static/js/2.0eda3e8f.chunk.js",
@@ -25,6 +25,7 @@
     "static/media/edits.cadf0303.png": "/home/static/media/edits.cadf0303.png",
     "static/media/flowers.ce901ccb.svg": "/home/static/media/flowers.ce901ccb.svg",
     "static/media/font-sample.f8374659.png": "/home/static/media/font-sample.f8374659.png",
+    "static/media/gold.751c6527.svg": "/home/static/media/gold.751c6527.svg",
     "static/media/hermosa-branding-footer.a608ba88.jpg": "/home/static/media/hermosa-branding-footer.a608ba88.jpg",
     "static/media/hermosa-branding-header.f3382918.jpg": "/home/static/media/hermosa-branding-header.f3382918.jpg",
     "static/media/hermosa-branding-preview.62a27be3.png": "/home/static/media/hermosa-branding-preview.62a27be3.png",
@@ -66,6 +67,6 @@
     "static/js/runtime-main.ac60b5ef.js",
     "static/js/2.0eda3e8f.chunk.js",
     "static/css/main.976733fa.chunk.css",
-    "static/js/main.c84c0dbb.chunk.js"
+    "static/js/main.b84ed347.chunk.js"
   ]
 }
