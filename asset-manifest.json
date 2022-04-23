@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/home/static/css/main.976733fa.chunk.css",
-    "main.js": "/home/static/js/main.d5be4e4c.chunk.js",
-    "main.js.map": "/home/static/js/main.d5be4e4c.chunk.js.map",
+    "main.js": "/home/static/js/main.7f4e0633.chunk.js",
+    "main.js.map": "/home/static/js/main.7f4e0633.chunk.js.map",
     "runtime-main.js": "/home/static/js/runtime-main.ac60b5ef.js",
     "runtime-main.js.map": "/home/static/js/runtime-main.ac60b5ef.js.map",
     "static/js/2.0eda3e8f.chunk.js": "/home/static/js/2.0eda3e8f.chunk.js",
@@ -61,6 +61,7 @@
     "static/media/swatch.a37ab4c7.png": "/home/static/media/swatch.a37ab4c7.png",
     "static/media/swiss-cheese.5db8efda.svg": "/home/static/media/swiss-cheese.5db8efda.svg",
     "static/media/task-flows.e18823dc.png": "/home/static/media/task-flows.e18823dc.png",
+    "static/media/teal.7bbe5083.svg": "/home/static/media/teal.7bbe5083.svg",
     "static/media/tipsmeasure.88ebb11b.svg": "/home/static/media/tipsmeasure.88ebb11b.svg",
     "static/media/user-journey-map.4906c1aa.png": "/home/static/media/user-journey-map.4906c1aa.png"
   },
@@ -68,6 +69,6 @@
     "static/js/runtime-main.ac60b5ef.js",
     "static/js/2.0eda3e8f.chunk.js",
     "static/css/main.976733fa.chunk.css",
-    "static/js/main.d5be4e4c.chunk.js"
+    "static/js/main.7f4e0633.chunk.js"
   ]
 }
