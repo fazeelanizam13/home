@@ -9,6 +9,7 @@ import navy from '../images/vectors/faces/navy.svg'
 import gold from '../images/vectors/faces/gold.svg'
 import mmly from '../images/vectors/faces/mmly.svg'
 import teal from '../images/vectors/faces/teal.svg'
+import purple from '../images/vectors/faces/purple.svg'
 
 import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
 import shirtsPreview from '../images/shirts/shirts-header.jpg'
@@ -78,6 +79,10 @@ export default function Home() {
   }, [])
 
   const vectors = [
+    {
+      vector: purple,
+      customStyles: { backgroundImage: `url(${purple})` }
+    },
     {
       vector: teal,
       customStyles: { backgroundImage: `url(${teal})` }
