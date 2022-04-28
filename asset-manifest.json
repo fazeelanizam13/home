@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/home/static/css/main.976733fa.chunk.css",
-    "main.js": "/home/static/js/main.7f4e0633.chunk.js",
-    "main.js.map": "/home/static/js/main.7f4e0633.chunk.js.map",
+    "main.js": "/home/static/js/main.bbfc1416.chunk.js",
+    "main.js.map": "/home/static/js/main.bbfc1416.chunk.js.map",
     "runtime-main.js": "/home/static/js/runtime-main.ac60b5ef.js",
     "runtime-main.js.map": "/home/static/js/runtime-main.ac60b5ef.js.map",
     "static/js/2.0eda3e8f.chunk.js": "/home/static/js/2.0eda3e8f.chunk.js",
@@ -46,6 +46,7 @@
     "static/media/placeorder-4.275375e9.svg": "/home/static/media/placeorder-4.275375e9.svg",
     "static/media/placing-order.8278a4af.gif": "/home/static/media/placing-order.8278a4af.gif",
     "static/media/plum.5b943adc.svg": "/home/static/media/plum.5b943adc.svg",
+    "static/media/purple.7141aa70.svg": "/home/static/media/purple.7141aa70.svg",
     "static/media/shirts-header.cb5efb4a.jpg": "/home/static/media/shirts-header.cb5efb4a.jpg",
     "static/media/signup-4.aeadceba.svg": "/home/static/media/signup-4.aeadceba.svg",
     "static/media/sketch-1.a6b1a9e6.JPG": "/home/static/media/sketch-1.a6b1a9e6.JPG",
@@ -69,6 +70,6 @@
     "static/js/runtime-main.ac60b5ef.js",
     "static/js/2.0eda3e8f.chunk.js",
     "static/css/main.976733fa.chunk.css",
-    "static/js/main.7f4e0633.chunk.js"
+    "static/js/main.bbfc1416.chunk.js"
   ]
 }
