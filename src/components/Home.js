@@ -1,293 +1,31 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import horizon from '../images/horizon.svg'
-import coffee from '../images/vectors/coffee.svg'
-import flowers from '../images/vectors/flowers.svg'
-import lamps from '../images/vectors/lamps.svg'
-import swissCheese from '../images/vectors/swiss-cheese.svg'
-import plum from '../images/vectors/faces/plum.svg'
-import navy from '../images/vectors/faces/navy.svg'
-import gold from '../images/vectors/faces/gold.svg'
-import mmly from '../images/vectors/faces/mmly.svg'
-import teal from '../images/vectors/faces/teal.svg'
-import purple from '../images/vectors/faces/purple.svg'
-
-import hermosaBrandingPreview from '../images/mockups/hermosa/hermosa-branding-preview.png'
-import shirtsPreview from '../images/shirts/shirts-header.jpg'
-
-import teaSwatch from '../images/vectors/tea/swatch.png'
-import orangeSwatch from '../images/vectors/orange/swatch.png'
-import gesturesSwatch from '../images/vectors/gestures/1swatch.png'
+import ig from "../images/ig.png"
+import li from "../images/li.png"
+import blog from "../images/blog.png"
+import gh from "../images/gh.png"
 
 import { stars } from '../helpers'
 
-import { Anchor, Footer, Fade } from "."
-
-const openTab = (e, id) => {
-  let i, tabs, tabContent;
-
-  // content under tabs. hide them all
-  tabContent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
-
-  // tabs. remove the active from all
-  tabs = document.getElementsByClassName("tab");
-  for (i = 0; i < tabs.length; i++) {
-    tabs[i].className = tabs[i].className.replace(" active", "");
-  }
-
-  // id = id of the content under clicked tab
-  // display it
-  document.getElementById(id).style.display = "flex";
-
-  // put active class to clicked tab
-  e.currentTarget.className += " active";
-}
-
-const Tab = ({ label, tabContentID, defaultTab }) => (
-  <span className="tab" id={defaultTab && "default"} onClick={e => openTab(e, tabContentID)}>
-    {label}
-  </span>
-)
-
-const Project = ({ vector, title, content, customStyles, setVisibleProject }) => (
-  // onClick works with 'vector' only if 'setVisibleProject' is present
-  // else it can be link if wrapped around an Anchor
-  <div className="project" style={{ ...customStyles }} onClick={() => {
-    if (setVisibleProject) {
-      setVisibleProject(vector)
-      document.getElementsByTagName('html')[0].classList.add('project-open')
-    }
-  }}>
-    <div className="overlay">
-      <div className="viewProjectButton"></div>
-    </div>
-  </div>
-)
-
 export default function Home() {
-  const [visibleProject, setVisibleProject] = useState(null)
-
   // sky
   useEffect(stars, [])
-
-  // tabs
-  useEffect(() => {
-    // click on default tab as component loads
-    document.getElementById("default").click();
-  }, [])
-
-  const vectors = [
-    {
-      vector: purple,
-      customStyles: { backgroundImage: `url(${purple})` }
-    },
-    {
-      vector: teal,
-      customStyles: { backgroundImage: `url(${teal})` }
-    },
-    {
-      vector: mmly,
-      customStyles: { backgroundImage: `url(${mmly})` }
-    },
-    {
-      vector: gold,
-      customStyles: { backgroundImage: `url(${gold})` }
-    },
-    {
-      vector: navy,
-      customStyles: { backgroundImage: `url(${navy})` }
-    },
-    {
-      vector: plum,
-      customStyles: { backgroundImage: `url(${plum})` }
-    },
-    {
-      vector: swissCheese,
-      customStyles: { backgroundImage: `url(${swissCheese})` }
-    },
-    {
-      vector: flowers,
-      customStyles: { backgroundImage: `url(${flowers})` }
-    },
-    {
-      href: '/chamomile-tea-pattern',
-      customStyles: { backgroundImage: `url(${teaSwatch})` }
-    },
-    {
-      href: '/branding-assets-hermosa',
-      customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
-    },
-    // {
-    //   vector: lamps,
-    //   customStyles: { backgroundImage: `url(${lamps})` }
-    // },
-    {
-      href: '/blood-orange-pattern',
-      customStyles: { backgroundImage: `url(${orangeSwatch})` }
-    },
-    {
-      href: '/gestures-pattern',
-      customStyles: { backgroundImage: `url(${gesturesSwatch})` }
-    },
-    {
-      vector: coffee,
-      customStyles: { backgroundImage: `url(${coffee})` }
-    },
-  ]
-
-  const mockups = [
-    // {
-    //   href: '/branding-assets-hermosa',
-    //   title: "brand collateral for 'Hermosa'",
-    //   content: "print and digital branding assets for a clothing label",
-    //   customStyles: { backgroundImage: `url(${hermosaBrandingPreview})` },
-    // }
-  ]
-
-  const codingProjects = [
-    // {
-    //   href: "https://fazeelanizam13.github.io/how-to-FLEX/",
-    //   customStyles: { backgroundColor: "#4a0c55" },
-    //   title: "How to FLEX",
-    //   content: "A learning tool for CSS Flexbox layout built with HTML, CSS and jQuery."
-    // },
-    // {
-    //   href: "https://fazeelanizam13.github.io/swatch/",
-    //   customStyles: { backgroundColor: '#884163' },
-    //   title: "Swatch",
-    //   content: "An app built with ReactJS which generates harmonious color palettes with user's choice of base and accent colors."
-    // },
-    {
-      href: "https://fazeelanizam13.github.io/hanzi-guide/",
-      hrefType: 'external',
-      customStyles: {
-        backgroundImage: 'url("https://fazeelanizam13.github.io/hanzi-guide/static/media/lantern.96202190.svg")',
-        backgroundPosition: 'top right'
-      },
-      title: "han-zi guide",
-      content: "a ReactJS app which displays basic information about a given Chinese character"
-    },
-    {
-      href: "https://fazeelanizam13.github.io/mozilla-rusl/",
-      hrefType: 'external',
-      customStyles: {
-        backgroundImage: 'url("https://fazeelanizam13.github.io/mozilla-rusl/img/above-fold-pic.jpg")',
-        backgroundPosition: 'center bottom'
-      },
-      title: "offcial homepage: Mozilla Campus Club - RUSL",
-      content: "developed as an entry for the single-page web design hackathon conducted by the Mozilla Campus Club of Rajarata University of Sri Lanka."
-    },
-    // {
-    //   href: "https://fazeelanizam13.github.io/notes-app/",
-    //   customStyles: { backgroundColor: "#8c1837" },
-    //   title: "Notes",
-    //   content: "A note taking app which imitates database functionality through local storage, written using React Hooks."
-    // }
-  ]
 
   return (
     <>
       <div id="sky">
         <div className="star"></div>
-        <img id="horizon" src={horizon} alt="horizon" />
-      </div>
-
-      <div className="below-fold">
-        <div className="work">
-          <div className="tabs">
-            {/* <Tab label="vectors 〰️➰" tabContentID="one" /> */}
-            <Tab label="mockups 📱 and illustrations 〰️➰" tabContentID="two" defaultTab />
-            {/* <Tab label="unexpected inspiration 🎨" tabContentID="three" /> */}
-            <Tab label="code ⌨️" tabContentID="four" />
-          </div>
-
-          <div className="tab-content-wrapper">
-            {/* <div className="tab-content" id="one">
-              {
-                mockups.map(({ href, title, content, customStyles }) => <Anchor
-                  href={href}
-                  customStyles={customStyles}
-                  className="project-link"
-                  key={href}
-                >
-                  <Project title={title} content={content} />
-                </Anchor>)
-              }
-            </div> */}
-
-            <div className="tab-content" id="two">
-              {
-                vectors.map(vector => {
-                  // if there's 'href' wrap in Anchor
-                  if (vector.href) {
-                    return (
-                      <Anchor
-                        href={vector.href}
-                        customStyles={vector.customStyles}
-                        className="project-link"
-                        key={vector.href}
-                      >
-                        <Project title={vector.title} content={vector.content} />
-                      </Anchor>
-                    )
-                  } else {
-                    // else return clickable thumbnail
-                    return <Project {...vector} setVisibleProject={setVisibleProject} />
-                  }
-                })
-              }
-            </div>
-
-            {/* <div className="tab-content" id="three">
-              <Anchor href="/dressmaking-workshop-app" customStyles={{ backgroundImage: `url(${shirtsPreview})`, backgroundPosition: 'bottom' }}>
-                <Project
-                  title="Mobile App for a Fashion Atelier - Case Study"
-                  content="Mobile UI prototype for an app that lets customers place orders for tailor-made dressshirts."
-                />
-              </Anchor>
-            </div> */}
-
-            <div className="tab-content" id="four">
-              {
-                codingProjects.map(({ href, hrefType, customStyles, title, content }) => (
-                  <Anchor href={href} hrefType={hrefType} customStyles={customStyles} key={href}>
-                    <Project title={title} content={content} />
-                  </Anchor>
-                ))
-              }
-            </div>
+        <div className="content">
+          <div className="icons">
+            <a href="https://github.com/fazeelanizam13" target="_blank" title="github"><img src={gh} alt="" /></a>
+            <a href="https://not-a-tech-blog.web.app/" target="_blank" title="blog"><img src={blog} alt="" /></a>
+            <a href="https://www.linkedin.com/in/fazeelanizam/" target="_blank" title="linkedin"><img src={li} alt="" /></a>
+            <a href="https://www.instagram.com/fazeelanizam13/" target="_blank" title="instagram"><img src={ig} alt="" /></a>
           </div>
         </div>
-
-        <Footer />
+        <img id="horizon" src={horizon} alt="horizon" />
       </div>
-
-      <ProjectPage visibleProject={visibleProject} setVisibleProject={setVisibleProject} />
     </>
   )
 }
-
-const ProjectPage = ({ visibleProject, setVisibleProject }) => (
-  <Fade show={visibleProject}>
-    <div style={{ position: 'relative', zIndex: 2 }}>
-      <div className="projectCloseButton" onClick={() => {
-        setVisibleProject(null)
-        document.getElementsByTagName('html')[0].classList.remove('project-open')
-      }}></div>
-
-      <div style={{
-        backgroundColor: '#060606',
-        backgroundImage: `url(${visibleProject})`,
-        width: '100vw',
-        height: '101vh',
-        position: 'fixed',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'contain'
-      }}></div>
-    </div>
-  </Fade>
-)
 
