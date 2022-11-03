@@ -17,7 +17,7 @@ export default function Home() {
         <div className="star"></div>
         <div className="content">
           <div className="icons">
-            <a href="https://github.com/fazeelanizam13" target="_blank" title="github"><img src={gh} alt="" /></a>
+            <a href="https://gist.github.com/fazeelanizam13" target="_blank" title="gists/github"><img src={gh} alt="" /></a>
             <a href="https://not-a-tech-blog.web.app/" target="_blank" title="blog"><img src={blog} alt="" /></a>
             <a href="https://www.linkedin.com/in/fazeelanizam/" target="_blank" title="linkedin"><img src={li} alt="" /></a>
             <a href="https://www.instagram.com/fazeelanizam13/" target="_blank" title="instagram"><img src={ig} alt="" /></a>
