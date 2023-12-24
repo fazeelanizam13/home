@@ -1,21 +1,14 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.e7b3db21.chunk.css",
-    "main.js": "/home/static/js/main.cc281fe4.chunk.js",
-    "main.js.map": "/home/static/js/main.cc281fe4.chunk.js.map",
-    "runtime-main.js": "/home/static/js/runtime-main.ac60b5ef.js",
-    "runtime-main.js.map": "/home/static/js/runtime-main.ac60b5ef.js.map",
-    "static/js/2.91d24b3e.chunk.js": "/home/static/js/2.91d24b3e.chunk.js",
-    "static/js/2.91d24b3e.chunk.js.map": "/home/static/js/2.91d24b3e.chunk.js.map",
+    "main.css": "/home/static/css/main.12db6404.css",
+    "main.js": "/home/static/js/main.b73b59bf.js",
+    "static/media/horizon.svg": "/home/static/media/horizon.002eb65335f96106586925f9eab4938f.svg",
     "index.html": "/home/index.html",
-    "static/css/main.e7b3db21.chunk.css.map": "/home/static/css/main.e7b3db21.chunk.css.map",
-    "static/js/2.91d24b3e.chunk.js.LICENSE.txt": "/home/static/js/2.91d24b3e.chunk.js.LICENSE.txt",
-    "static/media/horizon.002eb653.svg": "/home/static/media/horizon.002eb653.svg"
+    "main.12db6404.css.map": "/home/static/css/main.12db6404.css.map",
+    "main.b73b59bf.js.map": "/home/static/js/main.b73b59bf.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac60b5ef.js",
-    "static/js/2.91d24b3e.chunk.js",
-    "static/css/main.e7b3db21.chunk.css",
-    "static/js/main.cc281fe4.chunk.js"
+    "static/css/main.12db6404.css",
+    "static/js/main.b73b59bf.js"
   ]
 }
