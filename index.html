@@ -133,7 +133,7 @@
       const PERIOD_BETWEEN_SHOOTING_STARS = { min: 1, max: 5 };
       const SHOOTING_ANIMATION_DURATION = 2;
 
-      const MIN_NUMBER_OF_STARS = 100;
+      const EXTRA_SCROLL_HEIGHT = 10;
 
       for (let i = 1; i < STARS_TO_BE_PAINTED; i++) {
         const newStar = star.cloneNode(true);
@@ -167,10 +167,16 @@
         // append the new star to the sky
         sky.appendChild(newStar);
 
-        console.log(i, sky.scrollHeight, sky.clientHeight, sky.scrollHeight > sky.clientHeight);
+        console.log(
+          i,
+          sky.scrollHeight,
+          sky.clientHeight,
+          sky.scrollHeight > sky.clientHeight,
+          sky.scrollHeight > sky.clientHeight + EXTRA_SCROLL_HEIGHT
+        );
 
         // if sky overdlowing, remove new star and stop adding more
-        if (sky.scrollHeight > sky.clientHeight && i > MIN_NUMBER_OF_STARS) {
+        if (sky.scrollHeight > sky.clientHeight + EXTRA_SCROLL_HEIGHT) {
           sky.removeChild(newStar);
           break;
         }
