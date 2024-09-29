@@ -167,15 +167,8 @@
         // append the new star to the sky
         sky.appendChild(newStar);
 
-        console.log(
-          i,
-          sky.scrollHeight,
-          sky.clientHeight,
-          sky.scrollHeight > sky.clientHeight,
-          sky.scrollHeight > sky.clientHeight + EXTRA_SCROLL_HEIGHT
-        );
-
         // if sky overdlowing, remove new star and stop adding more
+        // comparing scroll height with a value that is greater than client height to avoid early loop termination due to enexpected layout shifts that fullfils the condition "sky.scrollHeight > sky.clientHeight"
         if (sky.scrollHeight > sky.clientHeight + EXTRA_SCROLL_HEIGHT) {
           sky.removeChild(newStar);
           break;
